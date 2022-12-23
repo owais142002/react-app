@@ -34,7 +34,7 @@ const router = createBrowserRouter(
       <Route
         path="/workshopfloor"
         element={
-          <div className="h-screen overflow-hidden">
+          <div className="h-screen ">
             <NavBar />
             <WorkShopFloor />
           </div>

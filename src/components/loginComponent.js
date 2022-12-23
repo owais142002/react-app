@@ -1,11 +1,10 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 
-
 export default function LoginComponent() {
   const navigate = useNavigate();
-  function goToMain(){
-    navigate('/home',{replace:true});
+  function goToMain() {
+    navigate("/home", { replace: true });
   }
 
   return (
@@ -14,8 +13,7 @@ export default function LoginComponent() {
         <h1 className="text-4xl font-bold text-center text-originalColor  font-display">
           Sign in
         </h1>
-        <form  className="mt-6" >
-
+        <form className="mt-6" onSubmit={goToMain}>
           <div className="mb-2">
             <label
               for="email"
@@ -26,7 +24,7 @@ export default function LoginComponent() {
             <input
               type="email"
               className="block w-full px-4 py-2 mt-2 text-originalColor bg-white border rounded-md focus:border-blue-400 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
-            />
+              required/>
           </div>
           <div className="mb-2">
             <label
@@ -38,17 +36,21 @@ export default function LoginComponent() {
             <input
               type="password"
               className="block w-full px-4 py-2 mt-2 text-originalColor bg-white border rounded-md focus:border-blue-400 focus:ring-blue-300 focus:outline-none focus:ring focus:ring-opacity-40"
-            />
+              required/>
           </div>
           <a href="#" className="text-xs text-originalColor hover:underline">
             Forget Password?
           </a>
           <div className="mt-6">
-            <button onClick={goToMain} className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-originalColor rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600">
+            <button
+              // onClick={goToMain}
+              
+              type='submit'
+              className="w-full px-4 py-2 tracking-wide text-white transition-colors duration-200 transform bg-originalColor rounded-md hover:bg-blue-600 focus:outline-none focus:bg-blue-600"
+            >
               Login
             </button>
           </div>
-        
         </form>
         <div className="relative flex items-center justify-center w-full mt-6 border border-t">
           <div className="absolute px-5 bg-white">Or</div>
@@ -89,7 +91,10 @@ export default function LoginComponent() {
         <p className="mt-8 text-xs font-light text-center text-gray-700">
           {" "}
           Don't have an account?{" "}
-          <a href="#" className="font-medium text-originalColor hover:underline">
+          <a
+            href="#"
+            className="font-medium text-originalColor hover:underline"
+          >
             Sign up
           </a>
         </p>

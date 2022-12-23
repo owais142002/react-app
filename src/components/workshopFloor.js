@@ -64,7 +64,7 @@ export default function WorkShopFloor() {
         <div className="flex h-11/12 ml-1 mr-1 mb-1 w-3/4 bg-white   border-white-400 rounded-lg">
           <div className=" w-2/3 p-6 flex-col flex  space-y-20">
             <div className="flex font-display text-center justify-center space-x-2">
-              <label className="m-2 text-xl font-semibold">
+              <label className="m-2 text-xl font-semibold text-blueGray-600">
                 Select Workshop
               </label>
               <DropdownComponent
@@ -96,31 +96,31 @@ export default function WorkShopFloor() {
               controls={false}
               className="border-4 border-black rounded h-fit w-fit"
             ></video>
-            <h1 className="custom-car-text text-2xl p-2 pt-12 font-semibold underline">
+            <h1 className="custom-car-text text-2xl p-2 pt-12 font-semibold underline text-blueGray-600">
               Car Model:
             </h1>
             <div className="p-1 pt-10 w-full h-3/5">
               <ul className="list-disc">
-                <li className="  border-black p-2 h-fit custom text-xl text-start">
+                <li className="  border-black p-2 h-fit custom text-xl text-start text-blueGray-600">
                   Detecting Car Model
                 </li>
-                <li className="  border-black p-2 h-fit custom text-xl text-start">
+                <li className="  border-black p-2 h-fit custom text-xl text-start text-blueGray-600">
                   Calculating template placement
                 </li>
-                <li className="  border-black p-2 h-fit custom text-xl text-start">
+                <li className="  border-black p-2 h-fit custom text-xl text-start text-blueGray-600">
                   Overlaying template placement
                 </li>
-                <li className="  border-black p-2 h-fit custom text-xl text-start">
+                <li className="  border-black p-2 h-fit custom text-xl text-start text-blueGray-600">
                   Fetching placement measurement
                 </li>
-                <li className="  border-black p-2 h-fit custom text-xl text-start">
+                <li className="  border-black p-2 h-fit custom text-xl text-start text-blueGray-600">
                   Overlaying template placement measurement
                 </li>
               </ul>
             </div>
           </div>
         </div>
-        <div className=" w-1/4 h-11/12 p-6 ml-1 mr-1 mb-1 bg-white drop-shadow-2xl  border-white-200 rounded-lg">
+        <div className=" w-1/4 h-11/12 pt-6 bg-white drop-shadow-2xl  border-white-200 rounded-lg">
           <InformationBox />
         </div>
       </div>

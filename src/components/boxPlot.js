@@ -7,32 +7,24 @@ const ApexChart = (props) => {
       type: "boxPlot",
       data: [
         {
-          x: "Jan 2015",
+          x: "Toyota",
           y: [54, 66, 69, 75, 88],
         },
         {
-          x: "Jan 2016",
+          x: "Ford",
           y: [43, 65, 69, 76, 81],
         },
         {
-          x: "Jan 2017",
+          x: "KIA",
           y: [31, 39, 45, 51, 59],
         },
         {
-          x: "Jan 2018",
+          x: "Honda",
           y: [39, 46, 55, 65, 71],
         },
         {
-          x: "Jan 2019",
+          x: "Hyundai",
           y: [29, 31, 35, 39, 44],
-        },
-        {
-          x: "Jan 2020",
-          y: [41, 49, 58, 61, 67],
-        },
-        {
-          x: "Jan 2021",
-          y: [54, 59, 66, 71, 88],
         },
       ],
     },
@@ -53,8 +45,8 @@ const ApexChart = (props) => {
           },
       boxPlot: {
         colors: {
-          upper: "#5C4742",
-          lower: "#A5978B",
+          upper: "#004899",
+          lower: "#004950",
         },
       },
     },
