@@ -61,10 +61,10 @@ const router = createBrowserRouter(
       <Route
         path="/workerperformancemetrics"
         element={
-          <>
+          <div className="h-screen ">
             <NavBar />
             <WorkerPerformanceMetrics />
-          </>
+          </div>
         }
       />
     </>
